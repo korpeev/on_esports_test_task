@@ -1,0 +1,53 @@
+.event-chat {
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.event-chat h3 {
+    text-align: center;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.event-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.event-time {
+    font-size: 12px;
+    color: #aaa;
+    margin-right: 5px;
+}
+
+.event-message {
+    color: #fff;
+}
+
+.kill { background-color: rgba(255, 0, 0, 0.3); }
+.assist { background-color: rgba(0, 255, 0, 0.3); }
+.plant { background-color: rgba(255, 255, 0, 0.3); }
+.defuse { background-color: rgba(0, 0, 255, 0.3); }
+.round-start { background-color: rgba(128, 128, 128, 0.3); }
+.round-end { background-color: rgba(255, 165, 0, 0.3); }
+.mvp { background-color: rgba(124, 107, 0, 0.61); }

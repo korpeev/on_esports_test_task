@@ -1,0 +1,17 @@
+.player-stats {
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.player-stats-container {
+    display: flex;
+    gap: 10px;
+}
+
+.player-stats-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 15px;
+    width: 50%;
+}

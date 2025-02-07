@@ -1,0 +1,32 @@
+.game-info {
+    margin-bottom: 10px;
+}
+
+.game-info-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.round-timer, .score {
+    font-size: 18px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.round-timer {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    color: red;
+    animation: pulse 1s infinite;
+}

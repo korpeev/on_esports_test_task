@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# ON Esports Test Task – React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I implemented a simulation of the Overwolf API and a CS2 game for the test assignment at [ON Esports]. It uses real-time data, including event chat, to display a KDA table of players.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **React**
+- **TypeScript**
+- **Effector**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Environment Requirements
+- **Node.js version:** 20 or later (recommended: 20.12.1)
 
-## Expanding the ESLint configuration
+## How to Run Locally?
+1. Clone the repository:
+   ```sh
+   git clone [repo url/ssh]
+2. Navigate to the project directory and install dependencies:
+    ```sh
+    npm install
+3. Start the development server:
+    ```sh
+   npm run dev
+4. To build the project, run:
+    ```sh
+   npm run build
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Implemented Features
+- **Real-time event chat** (simulated using Effector state management).
+- **Player stats table** displaying **K/D/A**.
+- **Interactive UI** with options to show/hide the event chat and player stats table.
+   

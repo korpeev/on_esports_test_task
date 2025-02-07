@@ -1,0 +1,70 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+th:first-child {
+    border-top-left-radius: 8px;
+}
+th:last-child {
+    border-top-right-radius: 8px;
+}
+
+tr:last-child {
+    height: 40px;
+}
+
+tr:last-child > td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tr:last-child > td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+tr:last-child {
+    background-color: var(--primary-color);
+}
+
+@keyframes highlightRow {
+    0% { background-color: rgba(255, 255, 0, 0.5); }
+    100% { background-color: transparent; }
+}
+
+@keyframes highlightRow {
+    0% { background-color: rgba(255, 255, 0, 0.5); }
+    100% { background-color: transparent; }
+}
+
+@keyframes highlightDeadRow {
+    0% { background-color: unset }
+    50% { background-color: transparent; }
+    100% { background-color: rgba(255, 0, 0, 0.5); }
+}
+
+.dead {
+    animation: highlightDeadRow 1s ease-out forwards;
+}
+
+.highlight {
+    animation: highlightRow 1s ease-out;
+}
