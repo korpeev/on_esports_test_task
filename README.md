@@ -2,6 +2,8 @@
 
 I implemented a simulation of the Overwolf API and a CS2 game for the test assignment at [ON Esports]. It uses real-time data, including event chat, to display a KDA table of players.
 
+### [DEMO LINK](https://korpeev.github.io/on_esports_test_task/)
+
 ## Tech Stack
 - **React**
 - **TypeScript**
